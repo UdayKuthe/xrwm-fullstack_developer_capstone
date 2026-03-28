@@ -1,46 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <!-- REQUIRED CSS -->
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
 
 <h1>About Us</h1>
 
+<!-- ✅ CORRECT DESCRIPTION (IMPORTANT) -->
+<div class="container">
+    <p>
+        Welcome to our Car Dealership Review Application. This platform allows users to explore
+        different car dealerships, read customer reviews, and share their own experiences.
+        Our goal is to provide a transparent and reliable system where users can make informed
+        decisions based on real customer feedback. We leverage modern web technologies like
+        Django and React to deliver a seamless and interactive user experience.
+    </p>
+</div>
+
+<!-- ✅ TEAM SECTION -->
 <div class="container">
     <div class="team">
 
         <div class="card">
-            <img src="https://randomuser.me/api/portraits/men/1.jpg">
+            <!-- ✅ RELEVANT IMAGE -->
+            <img src="cars.jpeg" alt="Frontend Developer">
             <h3>Rahul Sharma</h3>
-            <p>Frontend Developer</p>
-            <p>Builds UI using React and CSS</p>
+            <p><b>Frontend Developer</b></p>
+            <p>Builds responsive UI using React and CSS</p>
             <p>Email: rahul@example.com</p>
         </div>
 
         <div class="card">
-            <img src="https://randomuser.me/api/portraits/women/2.jpg">
+            <img src="cars.jpeg" alt="Backend Developer">
             <h3>Priya Singh</h3>
-            <p>Backend Developer</p>
-            <p>Works with Django and APIs</p>
+            <p><b>Backend Developer</b></p>
+            <p>Develops APIs using Django and Node.js</p>
             <p>Email: priya@example.com</p>
         </div>
 
         <div class="card">
-            <img src="https://randomuser.me/api/portraits/men/3.jpg">
+            <img src="cars.jpeg" alt="Full Stack Developer">
             <h3>Amit Verma</h3>
-            <p>Full Stack Developer</p>
-            <p>Handles integration and deployment</p>
+            <p><b>Full Stack Developer</b></p>
+            <p>Handles integration, deployment and database</p>
             <p>Email: amit@example.com</p>
         </div>
-        <h2>About Us</h2>
-        <p>
-        We are a full-stack development team focused on building scalable web applications.
-        Our project helps users explore car dealerships, read reviews, and share their experiences.
-        We aim to deliver high-quality solutions using modern technologies like React and Django.
-        </p>
+
     </div>
 </div>
 
